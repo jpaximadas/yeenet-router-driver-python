@@ -5,7 +5,6 @@ from yeenet_router import remote_serial
 print("trying to set up router")
 
 router = yeenet_router(serial.Serial(port='/dev/ttyUSB0',baudrate=115200))
-#router = yeenet_router(remote_serial('127.0.0.1',6262))
 
 print("attempting reset...")
 router.reset()
